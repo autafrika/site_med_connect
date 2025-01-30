@@ -1284,21 +1284,6 @@ html{
   justify-content: flex-end;
 }
 
-.radio{
-  flex-shrink: 0;
-  --chkbg: var(--bc);
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
-  --tw-border-opacity: 0.2;
-}
-
 @media (prefers-reduced-motion: no-preference){
   .btn{
     animation: button-pop var(--animation-btn, 0.25s) ease-out;
@@ -1861,32 +1846,6 @@ details.collapse summary::-webkit-details-marker{
   }
 }
 
-.radio:focus{
-  box-shadow: none;
-}
-
-.radio:focus-visible{
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  outline-color: var(--fallback-bc,oklch(var(--bc)/1));
-}
-
-.radio:checked,
-  .radio[aria-checked="true"]{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
-  background-image: none;
-  animation: radiomark var(--animation-input, 0.2s) ease-out;
-  box-shadow: 0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset,
-      0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset;
-}
-
-.radio:disabled{
-  cursor: not-allowed;
-  opacity: 0.2;
-}
-
 @keyframes radiomark{
   0%{
     box-shadow: 0 0 0 12px var(--fallback-b1,oklch(var(--b1)/1)) inset,
@@ -2113,10 +2072,6 @@ nav{
   z-index: 1;
 }
 
-.z-40{
-  z-index: 40;
-}
-
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -2280,6 +2235,10 @@ nav{
   width: 9rem;
 }
 
+.w-44{
+  width: 11rem;
+}
+
 .w-5{
   width: 1.25rem;
 }
@@ -2294,10 +2253,6 @@ nav{
 
 .w-6{
   width: 1.5rem;
-}
-
-.w-64{
-  width: 16rem;
 }
 
 .w-8{
@@ -2346,10 +2301,6 @@ nav{
 
 .w-screen{
   width: 100vw;
-}
-
-.w-44{
-  width: 11rem;
 }
 
 .max-w-max{
@@ -2667,6 +2618,10 @@ nav{
   background-color: rgb(74 222 128 / 0.1);
 }
 
+.bg-purple-200\/50{
+  background-color: rgb(233 213 255 / 0.5);
+}
+
 .bg-purple-400\/15{
   background-color: rgb(192 132 252 / 0.15);
 }
@@ -2715,27 +2670,6 @@ nav{
 
 .bg-white\/80{
   background-color: rgb(255 255 255 / 0.8);
-}
-
-.bg-green-200\/50{
-  background-color: rgb(187 247 208 / 0.5);
-}
-
-.bg-purple-200\/50{
-  background-color: rgb(233 213 255 / 0.5);
-}
-
-.bg-white\/50{
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-red-400\/70{
-  background-color: rgb(248 113 113 / 0.7);
-}
-
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b{
@@ -3331,6 +3265,10 @@ nav{
     width: 83.333333%;
   }
 
+  .lg\:w-64{
+    width: 16rem;
+  }
+
   .lg\:w-8{
     width: 2rem;
   }
@@ -3345,10 +3283,6 @@ nav{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-64{
-    width: 16rem;
   }
 
   .lg\:flex-row{
@@ -3392,10 +3326,6 @@ nav{
     border-radius: 28px;
   }
 
-  .lg\:p-10{
-    padding: 2.5rem;
-  }
-
   .lg\:p-2{
     padding: 0.5rem;
   }
@@ -3423,6 +3353,11 @@ nav{
     padding-right: 8rem;
   }
 
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -3431,11 +3366,6 @@ nav{
   .lg\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .lg\:pl-4{
